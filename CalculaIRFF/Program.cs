@@ -112,12 +112,12 @@ namespace CalculaSalarioLiquido
             salarioLiquido = salarioBruto - baseCalculoIrff - inss.contribuicaoInss - valorVt - outrosDesc;
 
             Console.Clear();
-            Console.WriteLine("Desconto de pensão: " + pensao);
-            Console.WriteLine("Desconto de IRFF: " + baseCalculoIrff);
-            Console.WriteLine("Desconto VT: " + valorVt);
-            Console.WriteLine("Desconto INSS: " + inss.contribuicaoInss);
-            Console.WriteLine("Desconto Outros: " + outrosDesc);
-            Console.WriteLine("Salário líquido é: " + salarioLiquido);
+            Console.WriteLine($"Desconto de pensão: {pensao}");
+            Console.WriteLine($"Desconto de IRFF: {baseCalculoIrff}");
+            Console.WriteLine($"Desconto VT: {valorVt}");
+            Console.WriteLine($"Desconto INSS: {inss.contribuicaoInss}");
+            Console.WriteLine($"Desconto Outros: {outrosDesc}");
+            Console.WriteLine($"Salário líquido é: {salarioLiquido}");
 
             Console.ReadKey();
         }
